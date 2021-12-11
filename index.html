@@ -3,31 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"> 
+  <link rel="preload" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css" as="styles">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
   
-  Creation of Jules Wyvern
+  <main class="card">
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="nft__header">
+      <h2 class="nft__title">Equilibrium #3429</h2>
+      <p class="nft__paragraph">Our Equilibrium collection promotes balance and calm.</p>
+      
+      <div class="nft__price">
+        <p class="nft__price--paragraph">0.041 ETH</p>
+        <p class="nft__price--paragraph">3 days left</p>
+      </div> <!-- nft price -->
+
+    </div> <!-- Card Header -->
+    
+    <hr>
+
+    <div class="nft__footer">
+      <div class="nft__footer--img"></div>
+      <p class="nft__footer--paragraph">Creation of Jules Wyvern</p>
+    </div> <!-- nft footer -->
+    
+  </main>
+
 </body>
 </html>
