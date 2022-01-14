@@ -70,7 +70,6 @@ p{
 
 .nft__img:hover .overlay{
     display: block;
-    
     background: var(--Cyan);
 }
 
