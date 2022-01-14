@@ -1,23 +1,124 @@
 :root{
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
-    --Very-dark-blue: hsl(217, 54%, 11%);
-    --Very-dark-blue: hsl(216, 50%, 16%);
-    --Very-dark-blue: hsl(215, 32%, 27%);
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
 
     --font-primary: 'Outfit', sans-serif;
-}
+}   
 
 html{
     font-size: 62.5%;
     box-sizing: border-box;
 }
 
-*,*before,*after{
+*,*:before,*:after{
     box-sizing: inherit;
 }
 
 body{
     font-family: var(--font-primary);
+    background-color: var(--Very-dark-blue-main);
+}
+
+/* Utilidades */
+img{
+    max-width: 100%;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+p{
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+/* Container */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+
+}
+
+/* Card */
+.card{
+    width: 32rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: var(--Very-dark-blue-card);
+}
+
+.nft__img img{
+    border-radius: .5rem;
+}
+
+.nft__title{
+    color: white;
+}
+
+.nft__paragraph{
+    color: var(--Soft-blue);
+    line-height: 2.5rem;
+}
+
+.nft__price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.price__item{
+    display: flex;
+    
+    align-items: center;
+}
+
+.price--padding{
+    padding-right: .5rem;
+}
+
+.price__paragraph{
+    font-weight: 400;
+    color: var(--Cyan);
+}
+
+.price--paragraph{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--Soft-blue);
+}
+
+/* Footer */
+.nft__footer{
+    display: flex;
+    padding-top: 1rem;
+    align-items: center;
+    border-top: .1rem solid var(--Soft-blue);
+}
+
+.footer__img{
+    padding-right: 1.5rem;
+}
+
+.footer__img img{
+    border: .1rem solid var(--White);
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.footer__paragraph{
+    color: var(--Soft-blue);
+}
+
+.footer__paragraph span{
+    color: var(--White);
 }
