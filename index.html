@@ -6,19 +6,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"> 
-  <link rel="preload" href="/css/styles.css">
-  <link rel="stylesheet" href="/css/styles.css" as="styles">
+  <link rel="preload" href="/css/styles.css" as="style">
+  <link rel="stylesheet" href="/css/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
 </head>
 <body>
-  <main class="container">
-    
     <div class="card">
       <div class="nft__img">
         <img src="/images/image-equilibrium.jpg" alt="Image Equilibrium">
+        <div class="overlay"></div>
+        <div class="svg"></div>
       </div>
       <div class="nft__header">
         <h2 class="nft__title">Equilibrium #3429</h2>
@@ -51,7 +51,6 @@
       </div> <!-- nft footer -->
       
     </div>
-  </main>
 
 </body>
 </html>

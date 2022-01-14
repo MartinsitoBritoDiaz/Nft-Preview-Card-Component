@@ -19,6 +19,12 @@ html{
 }
 
 body{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
     font-family: var(--font-primary);
     background-color: var(--Very-dark-blue-main);
 }
@@ -29,31 +35,58 @@ img{
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: 600;
 }
 
 p{
     font-weight: 300;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
-/* Container */
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-
-}
 
 /* Card */
 .card{
-    width: 32rem;
+    width: min(90%, 35rem) ;
     padding: 2rem;
     border-radius: 2rem;
     background-color: var(--Very-dark-blue-card);
 }
+
+.nft__img{    
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    border-radius: .5rem;
+    display: none;
+}
+
+.nft__img:hover .overlay{
+    display: block;
+    
+    background: var(--Cyan);
+}
+
+.svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    top: 40%;
+    left: 43%;
+}
+
+.nft__img:hover .svg{
+    background-image: url(/images/icon-view.svg);
+    background-repeat: no-repeat;    
+}
+
 
 .nft__img img{
     border-radius: .5rem;
@@ -65,7 +98,7 @@ p{
 
 .nft__paragraph{
     color: var(--Soft-blue);
-    line-height: 2.5rem;
+    line-height: 2.2rem;
 }
 
 .nft__price{
@@ -87,13 +120,14 @@ p{
 }
 
 .price__paragraph{
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: var(--Cyan);
 }
 
 .price--paragraph{
-    font-size: 1.4rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: var(--Soft-blue);
 }
 
@@ -102,7 +136,7 @@ p{
     display: flex;
     padding-top: 1rem;
     align-items: center;
-    border-top: .1rem solid var(--Soft-blue);
+    border-top: .1rem solid var(--Very-dark-blue-line);
 }
 
 .footer__img{
